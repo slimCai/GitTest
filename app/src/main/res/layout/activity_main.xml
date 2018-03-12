@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:context="in.goodiebag.example.MainActivity">
+
+    <in.goodiebag.carouselpicker.CarouselPicker
+        android:id="@+id/imageCarousel"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#CCC"
+        app:items_visible="eight"/>
+
+    <in.goodiebag.example.MyFramelayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageCarousel"
+        android:layout_marginBottom="20dp">
+
+        <in.goodiebag.carouselpicker.CarouselPicker
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textCarousel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#CCC"
+            app:items_visible="five"/>
+
+
+            <in.goodiebag.example.MyClickView
+                android:id="@+id/v1"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+            <in.goodiebag.example.MyClickView
+                android:id="@+id/v2"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+
+            <in.goodiebag.example.MyClickView
+                android:id="@+id/v3"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+
+            <in.goodiebag.example.MyClickView
+                android:id="@+id/v4"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+
+            <in.goodiebag.example.MyClickView
+                android:id="@+id/v5"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+
+
+    </in.goodiebag.example.MyFramelayout>
+
+    <in.goodiebag.carouselpicker.CarouselPicker
+        android:id="@+id/mixCarousel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl"
+        android:layout_marginBottom="20dp"
+        android:background="#CCC"
+        app:items_visible="three"/>
+
+    <TextView
+        android:onClick="click"
+        android:id="@+id/tvSelectedItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mixCarousel"/>
+</RelativeLayout>

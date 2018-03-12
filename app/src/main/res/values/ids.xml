@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="jz_fullscreen_id" type="id"/>
+    <item name="jz_tiny_id" type="id"/>
+    <item name="h_dec" type="id"/>
+    <item name="hint_id" type="id"/>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="in.goodiebag.example.Main2Activity">
+
+    <in.goodiebag.example.l.LoopView
+        android:id="@+id/loop"
+        awv_lineSpace="1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ffffff"/>
+
+    <in.goodiebag.example.l.LoopView
+        android:id="@+id/loop2"
+        awv_lineSpace="1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ffffff"/>
+
+</LinearLayout>

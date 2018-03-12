@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.goodiebag.example.Main4Activity">
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#ff0000"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#ffff00"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#ff00ff"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#fff0aa"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+            </FrameLayout>
+        </HorizontalScrollView>
+
+
+    </FrameLayout>
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:onClick="click"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="123"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ddd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_above="@+id/ddd"
+            android:background="#dd00dd"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    </RelativeLayout>
+</FrameLayout>

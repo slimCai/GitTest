@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.goodiebag.example.Main3Activity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="1080px"
+        android:background="#ff0000"
+        android:scaleType="center"
+        android:layout_height="1920px"/>
+
+    <Button
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="click"
+        android:text="11"/>
+</FrameLayout>
